@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art search </title>
+    <link rel="stylesheet" href="style/index.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  </head>
+  <body>
+    <div id="center">
+      <h1> Hallo en welkom bij de Rijksmuseum zoek-website</h1>
+      <h2> Zoek een beroemde kunstenaar of schilderij in de zoekbar</h2>
+
+    <select id="Art" class="search" value="0">
+      <option value=""> </option>
+    </select> <br> <br>
+
+    <select id="Type" class="search" value="1"> 
+      <option value=""> </option>
+    </select> <br>
+
+    <p> Deze kleur moet in het kunst werk voor komen </p> 
+    <select  id="Material" class="search" value="6"> 
+      <option value=""> </option>
+    </select> <br>
+    <div id="Memo">
+
+    </div>
+
+    <button type="button" onclick="loaddArt()" id="Submit"> Submit </button>
+    </div>
+    <div id="Result">
+
+    </div>
+    
+
+    <script src="Script/searchBar.js"></script>
+    <script src="Script/artSearch.js"></script>
+  </body>
+</html>

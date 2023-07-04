@@ -1,0 +1,126 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: auto;
+  text-align: center;
+  background-color: rgb(150, 75, 0);
+}
+
+select{
+  width: 20%;
+}
+
+#Memo{
+  position: relative;
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  border: 2px solid black;
+  width: 10vh;
+  height: 10vh;
+}
+
+#Result{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1vw;
+}
+
+#Result > div > img{
+  width: 100%;
+  border-radius: 11px 11px 0px 0px;
+}
+
+
+.ArtObject:hover {
+  transform: scale(105%);
+  transition: 0.5s;
+  box-shadow: 2px 2px 20px rgba(16,08, 19,22, 20);
+  cursor: pointer;
+}
+
+.ArtObject{
+  transition: 0.5s;
+  width: 25%;
+  text-align: center;
+  margin: 50px;
+  border: 4px solid black;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.488);
+}
+
+.ArtObject > a{
+  position: relative;
+  bottom: 5px;
+}
+.Show{
+  text-align: left;
+  padding: 5px;
+  border-top: 4px solid black;
+  background-color: rgba(255, 255, 255, 0.488);
+  height: auto;
+}
+
+
+
+a{
+  transition: 0.5s;
+  color: black;
+}
+
+a:hover{
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+a:active{
+  box-shadow: 2px 2px 20px rgba(16,08, 19,22, 20);
+}
+
+a:visited{
+  color: gray;
+}
+
+#detailen{
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2vw;
+}
+
+#detailen > div > img{
+  width: 100%;
+  border-radius: 11px 11px 11px 11px;
+  bottom: 0px;
+}
+
+.Show > h4 {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+#Art, #Type, #Check, #Material, #Submit{
+  background-color: rgba(255, 255, 255, 0.488);
+}
+
+.header {
+  background-image: url("path/to/your/image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: auto; /* Adjust the height as needed */
+  position: relative;
+  width: 100%;
+}
+
+.header::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
